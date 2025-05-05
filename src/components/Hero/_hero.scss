@@ -9,11 +9,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
 
     &__title {
         color: theme.$headline;
         font-size: theme.$headlineSize;
+    }
+    &__paragraph {
+        color: theme.$paragraph;
+        font-size: theme.$mediumSize;
+        text-align: center;
+        width: 500px;
         margin-bottom: 1rem;
+    }
+    &__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: theme.$borderButton;
+        border: 2px solid #228B22;
+        font-size: theme.$paragraphSize;
+        font-weight: bold;
+        background-color: #7FFFD4;
+        color: #228B22;
+        padding: 0.05rem 1rem;
+        margin-top: 0.7rem;
     }
 }
 .blurred {

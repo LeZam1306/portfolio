@@ -4,9 +4,11 @@
     height: 50px;
     display: flex;
     flex-direction: row;
-    z-index: 11;
     transition: transform 0.2s ease-out 0.1s;
     cursor: pointer;
+    position: relative;
+    z-index: 12;
+    
     &:hover {
         transform: translateY(-10px);
     }
@@ -14,6 +16,7 @@
         transform: scale(1.1);
     } 
     &__input {
+        z-index: 1;
         all: unset;
         background-color: white;
         font-weight: 400;

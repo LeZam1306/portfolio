@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import './_hero.scss'
 import SearchBar from '../SearchBar/SearchBar'
+import { Info } from 'lucide-react'
 
 const Hero = () => {
     const [blur, setBlur] = useState(false)
@@ -20,9 +21,12 @@ const Hero = () => {
                 />
             }
         </AnimatePresence>
-        
         <h2 className='hero__title'>Adam Zamouri</h2>
-        <SearchBar changeFocus={setBlur}></SearchBar>
+        <p className='hero__paragraph'>
+            Développeur front-end React
+        </p>
+        <SearchBar changeFocus={setBlur} />
+        <p className='hero__info'><Info size={16}/> Disponible — stage, alternance ou CDI (embauche souhaitée)</p>
     </section>
 }
 export default Hero

@@ -1,0 +1,32 @@
+@use '../../styles/theme.scss' as theme;
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;  
+    position: absolute;
+    z-index: 11;
+
+    &__item {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0.5rem;
+        background-color: theme.$button;
+        color: theme.$button-text;
+        border-radius: theme.$borderButton;
+        font-weight: 600;
+        height: 35px;
+        cursor: pointer;
+        
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+}
+.visible {
+    display: flex;
+}
