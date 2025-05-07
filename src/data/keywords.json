@@ -1,0 +1,29 @@
+{
+    "pages" : {
+        "projets": [
+            "projets", "réalisations", "portfolio", "travaux", "démonstration", 
+            "site", "application", 
+            "clones", "maquettes", "github"
+        ],
+        "propos": [
+            "propos", "profli", "présentation", "description", 
+            "bio", "passion", "motivations", "developpeur", 
+            "objectif", "carrière"
+        ],
+        "competences": [
+            "compétences", "skills", "langages", "outils", "technologies", 
+            "stack", "frameworks", "bibliothèques", "html", "css", "javascript", 
+            "react", "git", "npm", "api", "design", "responsive", "back-end", "front-end",
+            "frontend", "backend"
+            ],
+        "contact": [
+            "contact", "formulaire", "email", "mail","linkedin", "joindre", "échange", 
+            "discuter", "message", "rendez-vous", "réseaux", "cv", "curriculum"
+        ],
+        "parcours": [
+            "parcours", "formation", "études", "éducation", "diplômes", 
+            "openclassrooms", "certifications", "école", "apprentissage", 
+            "étudiant", "étudiante", "dev web", "cours", "bootcamp"
+        ]
+    }
+}

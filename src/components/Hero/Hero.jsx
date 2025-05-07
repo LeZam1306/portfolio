@@ -1,12 +1,13 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import './_hero.scss'
 import SearchBar from '../SearchBar/SearchBar'
 import { Info } from 'lucide-react'
+import { useSection } from '../../hooks/useSection'
 
 const Hero = () => {
     const [blur, setBlur] = useState(false)
-    
+
     return <section className="hero">
         <AnimatePresence>
             {blur && 
