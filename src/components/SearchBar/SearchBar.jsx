@@ -5,7 +5,7 @@ import FilterSearchBar from '../FilterSearchBar/FilterSearchBar';
 import './_searchBar.scss'
 import { typeWritter } from './typeWritter';
 import { useSearch } from '../../hooks/useSearch';
-import { useSection } from '../../hooks/useSection'
+import { useNavigate } from 'react-router-dom';
 
 const sentences = [
     'recherche développeur react motivé', 
@@ -22,7 +22,7 @@ const SearchBar = ({
     const hasWritten = useRef(false)
     const inputRef = useRef(null)
     const {search, startSearch} = useSearch()
-    const { navSection } = useSection()
+    const navigate = useNavigate()
 
     useEffect(() => {
         if(!focus && inputRef.current && !hasWritten.current){
@@ -34,7 +34,7 @@ const SearchBar = ({
 
     useEffect(() => {
         if(search != undefined){
-            navSection(search)
+           navigate(search)
         }
     }, [search])
 

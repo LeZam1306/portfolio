@@ -19,11 +19,6 @@
         "contact": [
             "contact", "formulaire", "email", "mail","linkedin", "joindre", "échange", 
             "discuter", "message", "rendez-vous", "réseaux", "cv", "curriculum"
-        ],
-        "parcours": [
-            "parcours", "formation", "études", "éducation", "diplômes", 
-            "openclassrooms", "certifications", "école", "apprentissage", 
-            "étudiant", "étudiante", "dev web", "cours", "bootcamp"
         ]
     }
 }

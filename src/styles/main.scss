@@ -1,7 +1,9 @@
 @use './theme.scss';
-@use '../components/Hero/hero.scss';
+@use '../pages/Home/home.scss';
 @use '../components/SearchBar/searchBar.scss';
 @use '../components/FilterSearchBar/filterSearchBar.scss';
+@use '../pages/Skills/skills.scss';
+@use '../components/Layout/Header/header.scss';
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 * {
@@ -14,7 +16,8 @@ body {
     font-weight: 300;
     font-style: normal;
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow: hidden;
+    background-color: theme.$backgroung; 
 }
 html {
     scroll-behavior: smooth;

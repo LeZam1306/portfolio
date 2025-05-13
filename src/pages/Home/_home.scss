@@ -1,15 +1,14 @@
 @use '../../styles/theme.scss' as theme;
 
-.hero{
-    background-color: theme.$backgroung;
-    height: 100vh;
+.hero {
     width: 100%;
-    padding: 5rem 5rem;
+    height: 100vh; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-    position: absolute;
+    background-color: theme.$backgroung; 
+    color: theme.$headline; 
 
     &__title {
         color: theme.$headline;
