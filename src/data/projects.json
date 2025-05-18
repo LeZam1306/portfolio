@@ -1,0 +1,31 @@
+{
+    "cards": [
+        {
+            "id": 0,
+            "img": "./assets/rtk_img.webp",
+            "alt": "Capture d'écran de la page d'accueil du projet",
+            "title": "Gestion d’authentification avec Redux Toolkit",
+            "description": "Connexion front avec gestion des données reçues de l’API via deux slices Redux Toolkit : auth et user.",
+            "tags" : ["React", "Redux Toulkit", "API", "Authentification"],
+            "link": ["https://github.com/LeZam1306/projet_10.git"]
+        },
+        {
+            "id": 1,
+            "img": "./assets/maquette_img.webp",
+            "alt": "Capture d'écran de la page d'accueil du projet",
+            "title": "Maquette responsive avec animations CSS",
+            "description": "Reproduction d’une maquette en HTML/CSS mobile-first, avec animations fluides grâce aux keyframes et transitions CSS.",
+            "tags" : ["Responsive", "Animations", "Mobile First", "CSS"],
+            "link": ["https://github.com/LeZam1306/Projet_4.git", "https://lezam1306.github.io/Projet_4/"]
+        },
+        {
+            "id": 2,
+            "img": "./assets/sophie_img.webp",
+            "alt": "Capture d'écran de la page d'accueil du projet",
+            "title": "Interface dynamique et modale connectée à une API",
+            "description": "Projet JS avec affichage dynamique, modale pour ajouter/supprimer via API, mise à jour en temps réel et système de connexion utilisateur.",
+            "tags" : ["JavaScript", "API", "Modale", "DOM", "Interface Dynamique"],
+            "link": ["https://github.com/LeZam1306/projet_6.git"]
+        }
+    ]
+}

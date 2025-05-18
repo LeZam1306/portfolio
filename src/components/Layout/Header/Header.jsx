@@ -10,13 +10,13 @@ const Header = () => {
             animate={{
                 y: 0, 
                 transition: { 
-                    delay: 0.4,
-                    duration: 0.4,
+                    delay: 0.3,
+                    duration: 0.3,
                     ease: "easeOut"
                 }
             }}
             exit={{
-                y: -100,
+                y: "-100%",
                 transition: {
                     delay: 0,
                     duration: 0.1,
@@ -25,7 +25,7 @@ const Header = () => {
             }}
         >
             <Link to='/'>
-                <ArrowLeft size='28' className="header__arrow"/>
+                <ArrowLeft size='32' className="header__arrow"/>
             </Link>
             <nav className="header__nav">
                 <Link to="/competences">Compétences</Link>

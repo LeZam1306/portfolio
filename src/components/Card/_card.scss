@@ -1,0 +1,97 @@
+@use '../../styles/theme.scss' as theme;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: theme.$cardBackground;
+    border: 3px solid white;
+    border-radius: theme.$borderCard;
+    padding: 0;
+    width: 28%;
+    height: auto; 
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    &__overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        border: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        &--links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            background-color: black;
+            padding: 0.3rem 0.5rem;
+            border-radius: theme.$borderCard;
+
+            a {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    &__img {
+        height: 200px;
+        object-fit: cover;
+        border-bottom: solid 1px black;
+    }
+    &__content {
+        padding: 1rem;
+        flex-grow: 1;
+        display: flex; 
+        flex-direction: column; 
+    }
+    &__title {
+        color: theme.$cardHeadline;
+    }
+    &__desc {
+        color: theme.$cardParagraph;
+        margin-bottom: 1rem;
+        flex-grow: 1;
+    }
+    &__tags {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+        list-style-type: none;
+
+        &--tag {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: theme.$button;
+            color: theme.$button-text;
+            font-weight: 600;
+            padding: 0.2rem 0.4rem;
+            border-radius: theme.$borderButton;
+        }
+    }
+}
+
+.projets {
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch; 
+        width: 100%;
+    }
+}

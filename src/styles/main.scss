@@ -1,9 +1,11 @@
-@use './theme.scss';
+@use './theme.scss' as theme;
 @use '../pages/Home/home.scss';
 @use '../components/SearchBar/searchBar.scss';
 @use '../components/FilterSearchBar/filterSearchBar.scss';
 @use '../pages/Skills/skills.scss';
 @use '../components/Layout/Header/header.scss';
+@use '../pages/Projets/projets.scss';
+@use '../components/Card/card.scss';
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 * {
@@ -16,9 +18,14 @@ body {
     font-weight: 300;
     font-style: normal;
     line-height: 1.6;
-    overflow: hidden;
     background-color: theme.$backgroung; 
 }
 html {
     scroll-behavior: smooth;
+}
+.page {
+    background-color: theme.$backgroungPage;
+    min-height: 100vh;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }

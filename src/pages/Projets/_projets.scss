@@ -1,6 +1,6 @@
 @use '../../styles/theme.scss' as theme;
 
-.skills {
+.projets {
     max-width: 1240px;
     margin: auto;
     padding: 0 2rem;
@@ -17,6 +17,14 @@
         text-align: center;
         width: 60%;
         margin: auto;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
 
 }
