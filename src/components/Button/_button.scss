@@ -1,0 +1,60 @@
+@use '../../styles/theme' as theme;
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+    border: 2px solid theme.$button;
+    border-radius: theme.$borderButton;
+    max-width: 450px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &.hover {
+        background-color: theme.$button;
+    }
+
+    &__icon {
+        color: theme.$button;
+        transition: all 0.3s;
+        &.hover {
+            color: theme.$button-text
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+    &__infos {
+        color: theme.$button-text;
+
+        &--info {
+            font-size: theme.$smallSize;
+        }
+    }
+}
+.button.small {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 0;
+    gap: 0;
+    width: 76px;
+    height: 76px;
+    background-color: theme.$button; 
+    border: none;
+
+    &:hover {
+        background-color: #BE969C;
+    }
+
+    & .button__icon {
+        color: theme.$button-text;
+    }
+}

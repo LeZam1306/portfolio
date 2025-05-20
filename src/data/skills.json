@@ -1,0 +1,46 @@
+{
+    "cards" : [
+        {
+            "icon": "./assets/icons/icon_diplome.svg",
+            "altIcon": "icône de diplôme",
+            "title": "Diplôme Développeur Web",
+            "descrition": "Formation diplômante niveau Bac+2 suivie chez OpenClassrooms. Acquisition des compétences essentielles en développement web front-end.",
+            "skills": ["OpenClassrooms"]
+        },
+        {
+            "icon": "./assets/icons/icon_react.svg",
+            "altIcon": "icon de react",
+            "title": "Développement React",
+            "descrition": "Création d'applications web modernes et performantes avec React. Utilisation des dernières fonctionnalités et des bonnes pratiques.",
+            "skills" : ["JavaScript", "SCSS", "Motion", "Redux", "Router"]
+        },
+        {
+            "icon": "./assets/icons/icon_softskills.svg",
+            "altIcon": "icon de dialogue/soft skills",
+            "title": "Compétences Humaines",
+            "descrition": "Curieux et autonome, je sais m’organiser, collaborer efficacement et communiquer avec clarté.",
+            "skills": ["Curiosité", "Organisation", "Autonomie", "Travail d'équipe"]
+        },
+        {
+            "icon": "./assets/icons/icon_wordpress.svg",
+            "altIcon": "icon de WordPress",
+            "title": "Maîtrise WordPress",
+            "descrition": "Création de sites WordPress complets, de l’installation à la mise en ligne, avec application des principes de base pour sécuriser le site.",
+            "skills": ["WordPress", "OceanWP", "Hostinger", "Elementor", "Sécurité basique"]
+        },
+        {
+            "icon": "./assets/icons/icon_project.svg",
+            "altIcon": "icône de gestion de projet",
+            "title": "Gestion de projet",
+            "descrition": "Organisation et planification de projets web en équipe : suivi des tâches, versionning du code et collaboration efficace.",
+            "skills": ["Git", "Agile", "Kanban", "Rédaction de specs"]
+        },
+        {
+            "icon": "./assets/icons/icon_performance.svg",
+            "altIcon": "icône de performance",
+            "title": "Performance Web",
+            "descrition": "Optimisation du chargement et du rendu des pages pour offrir une expérience fluide, rapide et éco-responsable.",
+            "skills": ["Lazy Loading", "WebP", "Lighthouse", "Optimisation React"]
+        }
+    ]
+}

@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home"
 import Skills from "./pages/Skills/Skills"
 import Layout from "./components/Layout/Layout"
 import Projets from "./pages/Projets/Projets"
+import Contact from "./pages/Contact/Contact"
 
 const AnimatedRoutes = () => {
     const location = useLocation()
@@ -13,10 +14,9 @@ const AnimatedRoutes = () => {
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Layout />}>
                     <Route path="" element={<Home />} />
-                    <Route>
-                        <Route path="competences" element={<Skills />} />
-                    </Route>
+                    <Route path="competences" element={<Skills />} />
                     <Route path="projets" element={<Projets />} />
+                    <Route path="contact" element={<Contact />} />
                 </Route>
             </Routes>
         </AnimatePresence>

@@ -18,5 +18,14 @@
         width: 60%;
         margin: auto;
     }
-
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        justify-items: center; 
+        align-items: center; 
+        row-gap: 3rem;
+        max-width: 1080px;
+        margin: auto;
+    }
 }

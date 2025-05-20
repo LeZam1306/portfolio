@@ -1,0 +1,91 @@
+@use '../../styles/theme.scss' as theme;
+
+.gameCard {
+    width: 270px;
+    height: 405px;
+    perspective: 6000px;
+
+    &__container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+    }
+    &__face {
+        position: absolute;
+        backface-visibility: hidden;
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+
+        &--back {
+            box-shadow: inset 0 0 0 15px theme.$cardBackground;
+            background-color: #eebbc3;
+            opacity: 0.8;
+            background: radial-gradient(circle, transparent 20%, #eebbc3 20%, #eebbc3 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #eebbc3 20%, #eebbc3 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#ffffff 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #ffffff 2px, #eebbc3 2px) -1px 0;
+            background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+        }
+        &--front {
+            transform: rotateY(180deg);
+            background-color: theme.$cardBackground;
+            padding: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        &--icon { 
+            background-color: theme.$backgroung;
+            height: 48px;
+            width: 48px;
+            border-radius: theme.$borderCard;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--title {
+            color: theme.$cardHeadline;
+            font-size: theme.$smallSize;
+            font-weight: 600;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &--description {
+            color: theme.$cardParagraph;
+            font-size: theme.$paragraphSize;
+            line-height: 1.6;
+        }
+
+        &--skills {
+            margin-top: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+    }
+
+    &__skill {
+        background-color: theme.$button;
+        color: theme.$button-text;
+        padding: 0.3rem 0.6rem;
+        border-radius: theme.$borderButton;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
