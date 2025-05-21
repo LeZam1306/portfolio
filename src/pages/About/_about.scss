@@ -1,0 +1,41 @@
+@use '../../styles/theme.scss' as theme;
+
+.about {
+    max-width: 1240px;
+    margin: auto;
+    padding: 0 2rem;
+
+    &__title {
+        color: theme.$headlinePage;
+        font-size: theme.$headlineSize;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    &__subtitle {
+        font-size: theme.$smallSize;
+        color: white;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        position: absolute;
+        top: 20%;
+    }
+
+    &__me {
+        background-color: theme.$backgroung;
+        border-radius: 78% 22% 76% 24% / 32% 73% 27% 68%; 
+        width: 60%;
+        margin: auto;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &--paragraph {
+            color: white;
+            text-align: justify;
+        }
+    }
+}

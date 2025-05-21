@@ -1,0 +1,81 @@
+.envelope {
+    $envelope-color: #f9edef;
+    $envelope-shadow: #ede3e5;
+    $envelope-inside: #c6bcbe;
+    $paper-color: #f1f1f1;
+    $paper-lines: #e1e1e1;
+  
+    width: 150px;
+    height: 100px;
+    perspective: 1000px;
+    transform: scale(0.8) translateY(30px);
+  
+    &__wrapper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+    }
+  
+    &__closing {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: solid 60px $envelope-color;
+      border-left: solid 75px transparent;
+      border-right: solid 75px transparent;
+      transform-origin: top;
+    }
+  
+    &__body {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: $envelope-color;
+      clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%, 50% 50%);
+      z-index: 3;
+  
+      &--texture {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: solid 50px transparent;
+        border-bottom: solid 50px transparent;
+  
+        &-left {
+          border-left: solid 75px $envelope-shadow;
+        }
+  
+        &-right {
+          right: 0;
+          border-right: solid 75px $envelope-shadow;
+        }
+      }
+    }
+  
+    &__inside {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: $envelope-inside;
+      z-index: 1;
+    }
+  
+    &__paper {
+      position: absolute;
+      padding: 0.2rem;
+      left: 50%;
+      width: 135px;
+      height: 70px;
+      z-index: 2;
+      border-radius: 5px;
+      background: $paper-color;
+      background-image: linear-gradient($paper-lines 0.1em, transparent 0.01em);
+      background-size: 100% 10px;
+      
+      p {
+        font-family: "Handlee", cursive;
+        font-size: 9px;
+      }
+    }
+}
