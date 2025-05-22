@@ -9,6 +9,10 @@
     position: absolute;
     z-index: 11;
 
+    @media (max-width: 767px) {
+        display: none;
+    }
+
     &__item {
         list-style-type: none;
         display: flex;

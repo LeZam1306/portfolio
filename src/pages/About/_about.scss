@@ -5,12 +5,22 @@
     margin: auto;
     padding: 0 2rem;
 
+    @media (max-width: 767px) {
+        padding: 0 1rem;
+    }
+
     &__title {
         color: theme.$headlinePage;
         font-size: theme.$headlineSize;
         text-align: center;
-        margin-bottom: 1rem;
+
+        @media (max-width: 767px) {
+            text-align: left;
+            line-height: 0.9;
+            margin-bottom: 1rem;
+        }
     }
+
     &__subtitle {
         font-size: theme.$smallSize;
         color: white;
@@ -19,6 +29,14 @@
         margin: auto;
         position: absolute;
         top: 20%;
+
+         @media (max-width: 767px) {
+            text-align: left;
+            width: 100%;
+            padding-bottom: 2rem;
+            position: inherit;
+            color: theme.$subHeadlinePage;
+        }
     }
 
     &__me {
@@ -27,11 +45,18 @@
         width: 60%;
         margin: auto;
         height: 600px;
+        width: 700px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: relative;
+
+        @media (max-width: 767px) {
+            border-radius: theme.$borderCard;
+            width: 100%;
+            height: auto;
+        }
 
         &--paragraph {
             color: white;

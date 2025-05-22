@@ -5,17 +5,20 @@
     margin: auto;
     padding: 0 2rem;
 
-    &__articles {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start; 
-        gap:1rem
+    @media (max-width: 767px) {
+        padding: 0 1rem;
     }
+
     &__title {
         color: theme.$headlinePage;
         font-size: theme.$headlineSize;
         text-align: center;
+
+        @media (max-width: 767px) {
+            text-align: left;
+            line-height: 0.9;
+            margin-bottom: 1rem;
+        }
     }
     &__subtitle {
         font-size: theme.$smallSize;
@@ -24,12 +27,43 @@
         text-align: center;
         width: 60%;
         margin: auto;
+
+        @media (max-width: 767px) {
+            text-align: left;
+            width: 100%;
+            padding-bottom: 2rem;
+        }
     }
+
+    &__articles {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start; 
+        gap: 1rem;
+
+        @media (max-width: 950px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (max-width: 767px) {
+            align-items: flex-start;
+        }
+    }
+
     &__info {
         background-color: theme.$cardBackground;
         width: 40%;
         padding: 1rem;
         border-radius: theme.$borderCard;
+
+        @media (max-width: 950px) {
+            min-width: 400px;
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+            min-width: auto;
+        }
 
         &--title {
             color: theme.$cardHeadline;
@@ -41,6 +75,7 @@
             display: flex;
             flex-direction: column;
             gap: 1rem;
+            
         }
     }
     &__socials {
@@ -50,5 +85,9 @@
         align-items: flex-start;
         gap: 1rem;
         height: 100%;
+
+        @media (max-width: 950px) {
+            flex-direction: row;
+        }
     }
 }

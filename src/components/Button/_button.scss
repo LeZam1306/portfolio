@@ -13,6 +13,10 @@
     cursor: pointer;
     transition: all 0.3s;
 
+    @media (max-width: 767px) {
+        max-width: none;
+    }
+
     &.hover {
         background-color: theme.$button;
     }
@@ -30,12 +34,18 @@
         justify-content: flex-start;
         align-items: center;
         gap: 1rem;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     &__infos {
         color: theme.$button-text;
 
         &--info {
             font-size: theme.$smallSize;
+            word-break: break-all;
         }
     }
 }

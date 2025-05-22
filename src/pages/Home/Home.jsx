@@ -1,12 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import PageAnimations from '../../styles/PageAnimations/PageAnimations'
 import './_home.scss'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import { Info } from 'lucide-react'
+import useDeviceType from '../../hooks/useDeviceType'
 
 const Home = () => {
     const [blur, setBlur] = useState(false)
+    const { isMobile } = useDeviceType()
 
     return <PageAnimations close={true}>
         <section className="hero">
@@ -27,8 +29,8 @@ const Home = () => {
             <p className='hero__paragraph'>
                 Développeur front-end React
             </p>
-            <SearchBar changeFocus={setBlur} />
-            <p className='hero__info'><Info size={16}/> Disponible — stage, alternance ou CDI (embauche souhaitée)</p>
+            { !isMobile && <SearchBar changeFocus={setBlur} />}
+            <div className='hero__info'><Info size={isMobile ? 24 : 16}/> <p>Disponible — stage, alternance ou CDI (embauche souhaitée)</p></div>
         </section>
     </PageAnimations>
 }
