@@ -24,8 +24,8 @@ const Card = ({
                     exit={{opacity: 0}}
                 > 
                     <div className="card__overlay--links">
-                        <a href={links[0]}><Computer />Github</a> 
-                        {links.length > 1 &&  <a href={links[1]}><TabletSmartphone />Demo</a>}
+                        <a href={links[0]} target="_blank"><Computer />Github</a> 
+                        {links.length > 1 &&  <a href={links[1]} target="_blank"><TabletSmartphone />Demo</a>}
                     </div>
                 </motion.div>
             }

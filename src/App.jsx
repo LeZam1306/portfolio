@@ -14,7 +14,7 @@ const AnimatedRoutes = () => {
         <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Layout />}>
-                    <Route path="" element={<Home />} />
+                    <Route index element={<Home />} />
                     <Route path="competences" element={<Skills />} />
                     <Route path="projets" element={<Projets />} />
                     <Route path="contact" element={<Contact />} />
@@ -27,7 +27,7 @@ const AnimatedRoutes = () => {
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/portfolio/">
             <AnimatedRoutes />
         </BrowserRouter>
     )
